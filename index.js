@@ -8,3 +8,15 @@ function name() {
 }
 
 console.log(chalk.yellow.bold("Welcome to a MINI QUIZ about ME!"));
+
+var a = name();
+
+while (a === "") {
+  console.log(chalk.red("you must enter your name !"));
+  var a = name();
+  if (a === "") {
+    continue;
+  } else {
+    break;
+  }
+}
