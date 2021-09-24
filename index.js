@@ -27,3 +27,16 @@ console.log(
       "\n1. You get 3 points for each right answer.\n2. You lose 2 points for each wrong answer.\n3. You can only play until your score is above negative 10.\n4. Only enter a b or c in mcq's."
     )
 );
+
+function play(q, a) {
+  var userAnswer = readlineSync.question(chalk.cyan.bold("\n" + q));
+
+  if (userAnswer.toLowerCase() === a.toLowerCase()) {
+    console.log(chalk.blue("Right answer! You get 3 points."));
+    score = score + 3;
+  } else {
+    console.log(chalk.red("Wrong answer! You lose 2 points."));
+    score = score - 2;
+  }
+  console.log(chalk.yellow.italic.bold("your score:" + score));
+}
