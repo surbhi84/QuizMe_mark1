@@ -2,6 +2,29 @@ var readlineSync = require("readline-sync");
 var chalk = require("chalk");
 var score = 0;
 
+var qarray = [
+  (q1 = {
+    ques: "What is my full name?",
+    ans: "surbhi kukreti",
+  }),
+  (q2 = {
+    ques: "What do i like most?\n a) cooking\n b) food\n c) yoga",
+    ans: "b",
+  }),
+  (q3 = {
+    ques: "Which is my birth year?\n a) 1998\n b) 1999\n c) 2000",
+    ans: "b",
+  }),
+  (q4 = {
+    ques: "What was my class 10 cgpa?\n a) 8.5-9\n b) 7-7.5\n c) 8-8.5",
+    ans: "c",
+  }),
+  (q5 = {
+    ques: "what is my favourite color?\n a) pink\n b) black\n c) blue",
+    ans: "b",
+  }),
+];
+
 function name() {
   var userName = readlineSync.question(chalk.blue("Please enter your name.."));
   return userName;
