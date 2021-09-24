@@ -63,3 +63,12 @@ function play(q, a) {
   }
   console.log(chalk.yellow.italic.bold("your score:" + score));
 }
+
+for (i = 0; i < qarray.length; i++) {
+  if (score >= -10) {
+    play(qarray[i].ques, qarray[i].ans);
+  } else {
+    console.log(chalk.red.bold("\nYou can't play further"));
+    break;
+  }
+}
