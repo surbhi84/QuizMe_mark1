@@ -20,3 +20,10 @@ while (a === "") {
     break;
   }
 }
+
+console.log(
+  chalk.yellow.bold("\nHello " + a + "! here are the rules of the quiz.") +
+    chalk.magenta.italic(
+      "\n1. You get 3 points for each right answer.\n2. You lose 2 points for each wrong answer.\n3. You can only play until your score is above negative 10.\n4. Only enter a b or c in mcq's."
+    )
+);
