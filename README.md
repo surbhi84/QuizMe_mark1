@@ -9,6 +9,7 @@ QuizMe is a CLI app that quizes people on questions about me, its fun to be shar
 
 ## Technologies
 * JavaScript
+* NodeJs
 
 
 ## Live link
