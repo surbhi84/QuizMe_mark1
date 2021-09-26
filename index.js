@@ -23,6 +23,15 @@ var qarray = [
     ques: "what is my favourite color?\n a) pink\n b) black\n c) blue",
     ans: "b",
   }),
+  (q6 = {
+    ques: "what is my favourite getaway?\n a) beach\n b) mountains\n c) desert",
+    ans: "b",
+  }),
+
+  (q7 = {
+    ques: "which one i like better?\n a) harry potter\n b)The Vampire Diaries\n c) BBT",
+    ans: "a",
+  }),
 ];
 
 function name() {
